@@ -4,7 +4,7 @@ import { render } from '@testing-library/react'
 //import { act } from 'react-dom/test-utils'
 import '@testing-library/jest-dom/extend-expect'
 import App from '../src/App'
-//import AnecdotesList from '../src/components/AnecdotesList'
+import AnecdotesList from '../src/components/AnecdotesList'
 
 
 
