@@ -3,10 +3,14 @@ name: Deployment pipeline
 on:
   push:
     branches:
-      - main
+      - main    
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
 
 jobs:
   simple_deployment_pipeline:
+    if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
