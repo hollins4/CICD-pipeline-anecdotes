@@ -1,0 +1,12 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans";
+    font-size: 18px;
+    background-color: rgb(150, 125, 170);
+}
